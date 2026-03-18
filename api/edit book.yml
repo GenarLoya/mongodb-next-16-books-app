@@ -1,0 +1,26 @@
+info:
+  name: edit book
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{BASE_URL}}/books/:id"
+  params:
+    - name: id
+      value: 69ba5d8c35b0c7d04b86546a
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Alice in wonderland (2nd Edition)",
+        "author": "Lewis Carroll"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

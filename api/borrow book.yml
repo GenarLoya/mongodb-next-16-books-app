@@ -1,0 +1,25 @@
+info:
+  name: borrow book
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/books/:id/borrow"
+  params:
+    - name: id
+      value: 69ba564654d11b8c7244be50
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "userId": "69ba564654d11b8c7244be4c"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

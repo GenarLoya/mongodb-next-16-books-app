@@ -13,6 +13,7 @@ const BookSchema = new mongoose.Schema<IBook>(
   {
     title: {
       type: String,
+      unique: true,
       required: [true, "Please provide a title"],
       maxlength: [120, "Title cannot be more than 120 characters"],
     },

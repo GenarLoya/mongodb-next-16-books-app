@@ -1,0 +1,4 @@
+name: Books Env
+variables:
+  - name: BASE_URL
+    value: http://localhost:3000/api

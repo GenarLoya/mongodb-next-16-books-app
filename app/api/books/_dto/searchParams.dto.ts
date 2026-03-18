@@ -20,4 +20,4 @@ export const BookSearchParamsDto = z.object({
   order: z.enum(["asc", "desc"]).default("desc"),
 });
 
-export type TBookSearchParams = z.infer<typeof BookSearchParamsDto>;
+export type TBookSearchParamsDto = z.infer<typeof BookSearchParamsDto>;
