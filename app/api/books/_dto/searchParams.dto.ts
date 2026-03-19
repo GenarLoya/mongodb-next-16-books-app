@@ -4,7 +4,7 @@ export const BookSearchParamsDto = z.object({
   q: z.string().optional(),
 
   library_id: z.string().optional(),
-  is_available: z.coerce.boolean().optional(),
+  is_available: z.stringbool().optional(),
 
   borrowed_by: z.string().optional(),
 

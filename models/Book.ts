@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 export interface IBook extends mongoose.Document {
   title: string;
-  author?: string;
+  author: string;
   isAvailable: boolean;
   borrowedBy?: mongoose.Types.ObjectId | null;
   createdAt: Date;
